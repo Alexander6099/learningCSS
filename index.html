@@ -4,18 +4,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <title>Alexande.links - Enlaces de alexander y cursos</title>
+    <link rel="stylesheet" href="./assets/output.css">
+
+  
 </head>
 
 <body class="max-w-xl mx-auto
-    border
     min-h-dvh
+    
     bg-gradient-to-b from-black via-sky-950  to-gray-800">
     <header class="text-white">
         <div>
             <img src="./assets/profile.jpg" alt="Foto de perfil de Alexander"
-                class="h-[50vh] object-cover mask-radial-at-center mask-radial-from-45% mask-radial-to-80%" />
+                class="h-[50vh] object-cover mask-radial-at-center mask-radial-from-45% mask-radial-to-80% animate-pulse-fade-in" />
         </div> 
         <header class="flex flex-col justify-center items-center mb-8 -mt-4 ">
             <span class="
@@ -25,28 +27,34 @@
             cursor-crosshair
             z-10">
                 @alexander609
+                <svg class="ml-1 w-5 h-5 text-sky-400 inline" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true">
+          <path fill-rule="evenodd"
+            d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-8.707a1 1 0 00-1.414-1.414L9 11.172l-1.293-1.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+            clip-rule="evenodd" />
+        </svg>
             </span>
-            <h1 class="text-3xl font-extrabold leading-tight mt-1">
+            
+            <h1 class="text-3xl font-extrabold leading-tight mt-1 font-display">
                 Alexander Felix
             </h1>
 
         </header>
-
+        
         <section class="flex gap-2 justify-center">
             <!-- Twitch: tono púrpura claro -->
-            <a class="bg-purple-100 p-2 size-12 sm:size-16  flex items-center justify-center rounded-full hover:scale-110 transition-transform mr-3"
+            <a class="bg-purple-100  social-button"
                 href="https://twitch.tv" target="_blank" aria-label="Twitch">
                 <svg width="28" height="28">
                     <use xlink:href="./assets/sprite.svg#twitch"></use>
                 </svg>
             </a>
-            <a class="p-2 size-12 sm:size-16 flex items-center justify-center rounded-full hover:scale-110 transition-transform mr-3 bg-gray-800"
+            <a class="social-button bg-gray-800"
                 href="https://github.com" target="_blank" aria-label="GitHub">
                 <svg width="28" height="28">
                     <use xlink:href="./assets/sprite.svg#github"></use>
                 </svg>
             </a>
-            <a class="p-2 size-12 sm:size-16 flex items-center justify-center rounded-full hover:scale-110 transition-transform mr-3"
+            <a class="social-button"
                 href="https://youtube.com" target="_blank" aria-label="YouTube" style="background-color: #ffffff;">
                 <svg width="28" height="28">
                     <use xlink:href="./assets/sprite.svg#youtube"></use>
@@ -54,7 +62,7 @@
             </a>
 
             <!-- Instagram: degradado con tonos corporativos (atenuado para contraste) -->
-            <a class="p-2 size-12 sm:size-16 flex items-center justify-center rounded-full hover:scale-110 transition-transform mr-3
+            <a class="social-button
         bg-gradient-to-tr from-yellow-400 via-pink-600 to-purple-600" href="https://instagram.com" target="_blank"
                 aria-label="Instagram">
                 <svg width="28" height="28">
@@ -65,7 +73,7 @@
 
 
             <!-- X (Twitter): tono atenuado azul claro -->
-            <a class="p-2 size-12 sm:size-16 flex items-center justify-center rounded-full hover:scale-110 transition-transform mr-3"
+            <a class="social-button"
                 href="https://x.com" target="_blank" aria-label="X" style="background-color: #000000;">
                 <svg width="28" height="28">
                     <use xlink:href="./assets/sprite.svg#x"></use>
@@ -75,7 +83,7 @@
             <!-- GitHub: gris oscuro para contraste suave -->
 
             <!-- LinkedIn: tono atenuado azul -->
-            <a class="p-2 size-12 sm:size-16 flex items-center justify-center rounded-full hover:scale-110 transition-transform mr-3"
+            <a class="social-button"
                 href="https://linkedin.com" target="_blank" aria-label="LinkedIn" style="background-color: #e6f2fb;">
 
                 <svg width="28" height="28">
@@ -83,11 +91,83 @@
                 </svg>
             </a>
         </section>
+        <p class="text-white text-center mt-4  text-sm px-2 text-balance ">Estoy iniciando mi camino en el desarrollo web y quiero aprender a programar de forma sólida. Mi objetivo es dominar JavaScript, Node.js, HTML, CSS y las tecnologías relacionadas para crear aplicaciones modernas, funcionales y bien estructuradas. Estoy comprometido a practicar de manera constante, entender los fundamentos y avanzar hacia proyectos cada vez más completos.
+        </p>
+        <main class="pt-4 px-4">
+        <div class="grid grid-cols-3 grid-rows-2 gap-3 w-full">
 
-    </header>
-    <main>
-        Aqui van los enlaces y cursos.
+            <a href="https://cursoreact.dev" class=" relative rounded-3xl overflow-hidden bg-gradient-to-br from-cyan-900 via-cyan-700 to-cyan-500 
+            border border-cyan-900 
+            flex flex-col items-start
+            hover:scale-105 hover:constrast-125 transition 
+            group
+            col-span-2 p-7 min-h-[180px]
+            ">
+                <span class="absolute bottom-2  left 4 font-bold text-2xl
+                group-hover:translate-y-1 transition-transform
+                1">React.js</span>
+                <svg width="200" height="100" 
+                class="absolute -right-4 -bottom-4 -rotate-6 size-28 group-hover:-rotate-12 group-hover:scale-105 transition-transform">
+                    <use xlink:href="./assets/sprite.svg#react"/>
+                </svg>
+                <span class="absolute top-2 left-4 text-xs border border rounded-xl px-1 py-0.5">low Level</span>
+            </a>
+
+            <a href="https://cursoreact.dev" class=" relative rounded-3xl overflow-hidden bg-gradient-to-br from-orange-900 via-orange-700 to-orange-600 
+            border border-orange-800 
+            flex flex-col items-start
+            hover:scale-105 hover:constrast-125 transition 
+            group
+            col-span-1 p-7 min-h-[180px]
+            ">
+                <span class="absolute bottom-2  left 4 font-bold text-2xl
+                group-hover:translate-y-1 transition-transform
+                ">HTML</span>
+                <svg width="200" height="100" 
+                class="absolute -right-4 -bottom-4 -rotate-6 size-28 group-hover:-rotate-12 group-hover:scale-105 transition-transform">
+                    <use xlink:href="./assets/sprite.svg#html"/>
+                </svg>
+                <span class="absolute top-2 left-4 text-xs border border rounded-xl px-1 py-0.5">Midle Level</span>
+            </a>
+
+            <a href="https://cursoreact.dev" class=" relative rounded-3xl overflow-hidden bg-gradient-to-br from-purple-800 via-purple-500 to-purple-400 
+            border border-purple-800 
+            flex flex-col items-start
+            hover:scale-105 hover:constrast-125 transition 
+            group
+            col-span-1 p-7 min-h-[180px]
+            ">
+                <span class="absolute bottom-2  left 4 font-bold text-2xl
+                group-hover:translate-y-1 transition-transform
+                ">CSS</span>
+                <svg width="200" height="100" 
+                class="absolute -right-4 -bottom-4 -rotate-6 size-28 group-hover:-rotate-12 group-hover:scale-105 transition-transform">
+                    <use xlink:href="./assets/sprite.svg#css"/>
+                </svg>
+                <span class="absolute top-2 left-4 text-xs border border rounded-xl px-1 py-0.5">Learnig Loadin</span>
+            </a>
+
+            <a href="https://cursoreact.dev" class=" relative rounded-3xl overflow-hidden bg-gradient-to-br from-[#288810f3] via-[#32a515f3] to-[#63e643f5] 
+            border border-green-800 
+            flex flex-col items-start
+            hover:scale-105 hover:constrast-125 transition 
+            group
+            col-span-2 p-7 min-h-[180px]
+            ">
+                <span class="absolute bottom-2  left 4 font-bold text-2xl
+                group-hover:translate-y-1 transition-transform
+                ">Node.js</span>
+                <svg width="200" height="100" 
+                class="absolute -right-4 -bottom-4 -rotate-6 size-28 group-hover:-rotate-12 group-hover:scale-105 transition-transform">
+                    <use xlink:href="./assets/sprite.svg#node"/>
+                </svg>
+                <span class="absolute top-2 left-4 text-xs border border rounded-xl px-1 py-0.5">low Level</span>
+            </a>
+        </div>
+        
     </main>
+    </header>
+    
     <footer class="text-white">
         Desarrollado por Alexander &copy; 2024
     </footer>
